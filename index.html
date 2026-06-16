@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,86 +5,216 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy | Avraan IntrudEye</title>
 
+<!-- Modern Premium Typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root {
+    --bg-primary: #080d16;
+    --bg-secondary: #0f192a;
+    --card-bg: rgba(22, 34, 57, 0.75);
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent-red: #ff3344;
+    --accent-blue: #3b82f6;
+    --border-color: rgba(255, 255, 255, 0.08);
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f8fafc;
-    color:#1f2937;
-    line-height:1.8;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container{
-    max-width:950px;
-    margin:auto;
-    padding:40px 20px;
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-primary);
+    background-image: 
+        radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15), transparent 45%),
+        radial-gradient(circle at 10% 40%, rgba(255, 51, 68, 0.08), transparent 35%),
+        radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.08), transparent 35%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
 }
 
-.card{
-    background:#ffffff;
-    padding:40px;
-    border-radius:16px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+.container {
+    max-width: 950px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
-h1{
-    font-size:2.3rem;
-    margin-bottom:10px;
-    color:#111827;
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
-h2{
-    margin-top:35px;
-    margin-bottom:12px;
-    color:#111827;
+.header-logo svg {
+    filter: drop-shadow(0 0 10px rgba(255, 51, 68, 0.5));
 }
 
-h3{
-    margin-top:20px;
-    margin-bottom:10px;
-    color:#1f2937;
+.header-logo span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-p{
-    margin-bottom:15px;
+.card {
+    background: var(--card-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 24px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    animation: fadeInUp 0.8s ease-out;
 }
 
-ul{
-    margin-left:25px;
-    margin-bottom:15px;
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #ffffff 30%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-li{
-    margin-bottom:8px;
+.last-updated {
+    display: inline-block;
+    color: var(--accent-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    padding: 4px 16px;
+    background: rgba(59, 130, 246, 0.1);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 99px;
 }
 
-a{
-    color:#2563eb;
-    text-decoration:none;
+h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-top: 45px;
+    margin-bottom: 18px;
+    color: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-a:hover{
-    text-decoration:underline;
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 24px;
+    background: var(--accent-red);
+    border-radius: 99px;
+    box-shadow: 0 0 12px var(--accent-red);
 }
 
-.notice{
-    background:#eff6ff;
-    border-left:4px solid #2563eb;
-    padding:18px;
-    border-radius:8px;
-    margin:25px 0;
+p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-size: 1.05rem;
 }
 
-.footer{
-    text-align:center;
-    margin-top:40px;
-    color:#6b7280;
-    font-size:14px;
+ul {
+    margin-left: 5px;
+    margin-bottom: 25px;
+    list-style: none;
+}
+
+li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+    font-size: 1.02rem;
+}
+
+li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+}
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #60a5fa;
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+}
+
+.notice {
+    background: rgba(59, 130, 246, 0.08);
+    border-left: 4px solid var(--accent-blue);
+    padding: 24px;
+    border-radius: 12px;
+    margin: 35px 0;
+    box-shadow: inset 0 0 20px rgba(59, 130, 246, 0.05);
+}
+
+.notice p {
+    color: #e2e8f0;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin-bottom: 25px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width: 768px) {
+    .card {
+        padding: 30px 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
 }
 </style>
 </head>
@@ -94,266 +223,251 @@ a:hover{
 
 <div class="container">
 
-<div class="card">
+    <div class="header-logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C12 22 20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#ff3344" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="3" fill="#3b82f6"/>
+        </svg>
+        <span>Avraan Security</span>
+    </div>
 
-<h1>Privacy Policy for Avraan IntrudEye</h1>
+    <div class="card">
 
-<p><strong>Last Updated:</strong> June 3, 2026</p>
+        <h1>Privacy Policy for Avraan IntrudEye</h1>
+        <div class="last-updated">Last Updated: June 16, 2026</div>
 
-<div class="notice">
-Avraan IntrudEye is designed to help users protect their devices from unauthorized access. We believe security should never come at the cost of privacy. This Privacy Policy explains what information is processed, why it is needed, and how it is protected.
-</div>
+        <div class="notice">
+            <p>Avraan IntrudEye is designed to help users protect their devices from unauthorized access. We believe security should never come at the cost of privacy. This Privacy Policy explains what information is processed, why it is needed, and how it is protected.</p>
+        </div>
 
-<p>
-Imagine leaving your phone on a desk, in a classroom, or while traveling. If someone attempts to unlock your device without permission, IntrudEye can capture evidence and notify you. To provide these anti-theft features, the app requires access to certain device permissions and security-related information.
-</p>
+        <p>
+            Imagine leaving your phone on a desk, in a classroom, or while traveling. If someone attempts to unlock your device without permission, IntrudEye can capture evidence and notify you. To provide these anti-theft features, the app requires access to certain device permissions and security-related information.
+        </p>
 
-<h2>Information We Collect</h2>
+        <h2>Information We Collect</h2>
 
-<p>
-To provide anti-theft protection and security monitoring, IntrudEye may collect and process the following information:
-</p>
+        <p>
+            To provide anti-theft protection and security monitoring, IntrudEye may collect and process the following information:
+        </p>
 
-<ul>
-<li>Unique installation identifier (Installation ID)</li>
-<li>Application version and build information</li>
-<li>Device platform information</li>
-<li>First active and last active timestamps</li>
-<li>Firebase Cloud Messaging (FCM) token</li>
-<li>Security alert logs and metadata</li>
-<li>Failed unlock attempt records</li>
-<li>Location coordinates associated with security alerts</li>
-<li>Premium subscription status (if applicable)</li>
-</ul>
+        <ul>
+            <li>Unique installation identifier (Installation ID)</li>
+            <li>Application version and build information</li>
+            <li>Device platform details (Manufacturer, Model, and OS version)</li>
+            <li>First active and last active timestamps</li>
+            <li>Firebase Cloud Messaging (FCM) token</li>
+            <li>Security alert logs and metadata</li>
+            <li>Failed unlock attempt records</li>
+            <li>Intruder photos captured during failed unlock attempts</li>
+            <li>Location coordinates associated with security alerts</li>
+            <li>Premium subscription status (if applicable)</li>
+        </ul>
 
-<h2>Camera Permission</h2>
+        <h2>Camera Permission & Photo Handling</h2>
 
-<p>
-IntrudEye uses the Camera permission to capture a photo when an unauthorised unlock attempt is detected.
-</p>
+        <p>
+            IntrudEye uses the Camera permission to capture a photo when an unauthorized unlock attempt is detected.
+            Captured photos help identify who attempted to access the device and are used exclusively for anti-theft and device security purposes.
+        </p>
 
-<p>
-Captured photos help identify who attempted to access the device and are used exclusively for anti-theft and device security purposes.
-</p>
+        <p><strong>When a security event occurs:</strong></p>
+        <ul>
+            <li>A photo is captured automatically using the front-facing camera.</li>
+            <li>The photo is stored within the application's secure local directory on your device.</li>
+            <li><strong>The photo is securely uploaded to Firebase Storage under your account</strong> to enable cross-device synchronization and let you view intruder logs from the web admin panel.</li>
+            <li>The photo may also be transmitted directly to the recipient email address configured in the app settings.</li>
+        </ul>
 
-<h2>Photo Handling</h2>
+        <p>
+            Avraan does not operate any third-party advertising photo-storage servers, and we do not sell, rent, or share your captured photos with any third parties or advertising networks.
+        </p>
 
-<p>
-When a security event occurs:
-</p>
+        <h2>Location Permission</h2>
 
-<ul>
-<li>A photo may be captured on the device.</li>
-<li>The photo may be stored within the application's local storage area on the device.</li>
-<li>The photo may be transmitted directly to the email address configured by the user.</li>
-</ul>
+        <p>
+            IntrudEye uses precise location, approximate location, and background location access to determine where a security event occurred.
+            Background location is required because unauthorized unlock attempts may occur while the device is locked and the application is not actively open.
+        </p>
 
-<p>
-Captured photos are not uploaded to Firebase Storage.
-</p>
+        <p>
+            Location information is used solely for:
+        </p>
 
-<p>
-Avraan does not operate dedicated photo-storage servers and does not sell or share captured photos for advertising purposes.
-</p>
+        <ul>
+            <li>Security alerts and map links</li>
+            <li>Device recovery assistance</li>
+            <li>Anti-theft protection</li>
+        </ul>
 
-<h2>Location Permission</h2>
+        <h2>SMS & Phone Permissions (Offline Protection)</h2>
 
-<p>
-IntrudEye may use precise location, approximate location, and background location access to determine where a security event occurred.
-</p>
+        <p>
+            IntrudEye requests the Send SMS and Read Phone State permissions to ensure your device remains protected even when disconnected from the internet:
+        </p>
 
-<p>
-Background location is required because unauthorized unlock attempts may occur while the device is locked and the application is not actively open.
-</p>
+        <ul>
+            <li><strong>SMS Permission (SEND_SMS):</strong> Used to send outbound emergency security alerts (containing device location coordinates and carrier info) to your pre-configured emergency phone number when the device is locked and offline.</li>
+            <li><strong>Phone/SIM Permission (READ_PHONE_STATE):</strong> Used to check active cellular connections and identify SIM card details so that offline SMS alerts can be reliably routed using your preferred primary or fallback SIM card (useful for dual-SIM devices).</li>
+        </ul>
 
-<p>
-Location information is used solely for:
-</p>
+        <h2>Device Administrator Permission</h2>
 
-<ul>
-<li>Security alerts</li>
-<li>Device recovery assistance</li>
-<li>Anti-theft protection</li>
-</ul>
+        <p>
+            IntrudEye uses Android Device Administrator capabilities to support anti-theft protection and device security functionality.
+            This permission is used to monitor lockscreen lock attempts and detect failed password, PIN, or pattern entries.
+        </p>
 
-<h2>Device Administrator Permission</h2>
+        <p>
+            IntrudEye does not use Device Administrator access to:
+        </p>
 
-<p>
-IntrudEye may use Android Device Administrator capabilities to support anti-theft protection and device security functionality.
-</p>
+        <ul>
+            <li>Change user passwords</li>
+            <li>Erase device data</li>
+            <li>Access personal files, messages, or contacts</li>
+        </ul>
 
-<p>
-This permission may be used to:
-</p>
+        <p>
+            Users may revoke Device Administrator access at any time through Android Settings.
+        </p>
 
-<ul>
-<li>Detect failed unlock attempts</li>
-<li>Monitor unauthorized access attempts</li>
-<li>Trigger anti-theft protection features</li>
-<li>Support security alerts and intruder detection</li>
-</ul>
+        <h2>Firebase Services</h2>
 
-<p>
-IntrudEye does not use Device Administrator access to:
-</p>
+        <p>
+            IntrudEye uses selected Google Firebase services to support application functionality and user security:
+        </p>
 
-<ul>
-<li>Change user passwords</li>
-<li>Erase device data</li>
-<li>Access personal files</li>
-<li>Access contacts or messages</li>
-</ul>
+        <ul>
+            <li><strong>Firebase Authentication:</strong> To securely manage your user account.</li>
+            <li><strong>Firebase Storage:</strong> To store and backup captured intruder snapshots.</li>
+            <li><strong>Firebase Firestore:</strong> To sync security alert logs and device configuration.</li>
+            <li><strong>Firebase Cloud Messaging (FCM):</strong> To receive notifications and security updates.</li>
+            <li><strong>Firebase Remote Config:</strong> To update application parameters dynamically.</li>
+            <li><strong>Firebase Crashlytics:</strong> To collect anonymous performance reports and fix crashes.</li>
+        </ul>
 
-<p>
-Users may revoke Device Administrator access at any time through Android Settings.
-</p>
+        <p>
+            Google Privacy Policy:<br>
+            <a href="https://www.google.com/policies/privacy/" target="_blank">
+                https://www.google.com/policies/privacy/
+            </a>
+        </p>
 
+        <p>
+            Firebase Privacy Information:<br>
+            <a href="https://firebase.google.com/support/privacy" target="_blank">
+                https://firebase.google.com/support/privacy
+            </a>
+        </p>
 
+        <h2>Information Stored in Firebase</h2>
 
-<h2>Firebase Services</h2>
+        <p>
+            Depending on app usage, Firebase services may store:
+        </p>
 
-<p>
-IntrudEye uses selected Google Firebase services to support application functionality.
-</p>
+        <ul>
+            <li>Installation identifiers</li>
+            <li>Notification tokens</li>
+            <li>Security event logs</li>
+            <li>Alert metadata</li>
+            <li>Failed unlock records (including intruder photos)</li>
+            <li>Location-related alert coordinates</li>
+            <li>Premium subscription information</li>
+        </ul>
 
-<ul>
-<li>Firebase Firestore</li>
-<li>Firebase Cloud Messaging (FCM)</li>
-<li>Firebase Remote Config</li>
-</ul>
+        <p>
+            This information is used solely to provide application functionality, anti-theft protection, and service reliability.
+        </p>
 
-<p>
-These services help support:
-</p>
+        <h2>Information We Do Not Collect</h2>
 
-<ul>
-<li>Security alert synchronization</li>
-<li>Device registration</li>
-<li>Notification delivery</li>
-<li>Application configuration</li>
-</ul>
+        <p>
+            IntrudEye does not collect or access:
+        </p>
 
-<p>
-Google Privacy Policy:<br>
-<a href="https://www.google.com/policies/privacy/" target="_blank">
-https://www.google.com/policies/privacy/
-</a>
-</p>
+        <ul>
+            <li>Contacts list</li>
+            <li><strong>Personal SMS messages</strong> (we only send security alerts to your configured emergency contact; we never read, monitor, or collect incoming or stored SMS messages)</li>
+            <li><strong>Call logs or phone calls</strong> (we only read SIM status for offline SMS alerts; we never record calls or access call records)</li>
+            <li>Clipboard content</li>
+            <li>Browsing history</li>
+            <li>Advertising IDs</li>
+            <li>Payment card details</li>
+            <li>Social media credentials</li>
+        </ul>
 
-<p>
-Firebase Privacy Information:<br>
-<a href="https://firebase.google.com/support/privacy" target="_blank">
-https://firebase.google.com/support/privacy
-</a>
-</p>
+        <p>
+            IntrudEye does not sell personal information to advertisers or data brokers.
+        </p>
 
-<h2>Information Stored in Firebase</h2>
+        <h2>Data Security</h2>
 
-<p>
-Depending on app usage, Firebase services may store:
-</p>
+        <p>
+            We take modern, industry-standard security measures to protect the information processed by the application. However, no method of electronic storage or transmission can guarantee absolute security.
+        </p>
 
-<ul>
-<li>Installation identifiers</li>
-<li>Notification tokens</li>
-<li>Security event logs</li>
-<li>Alert metadata</li>
-<li>Failed unlock records</li>
-<li>Location-related alert information</li>
-<li>Premium subscription information</li>
-</ul>
+        <h2>Children's Privacy</h2>
 
-<p>
-This information is used solely to provide application functionality, anti-theft protection, and service reliability.
-</p>
+        <p>
+            IntrudEye is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
+        </p>
 
-<h2>Information We Do Not Collect</h2>
+        <h2>Your Choices</h2>
 
-<p>
-IntrudEye does not collect:
-</p>
+        <ul>
+            <li>Disable camera, location, SMS, or phone state permissions through Android Settings.</li>
+            <li>Configure, update, or disable Email, Telegram, or SMS alert recipients in the app settings.</li>
+            <li>Disable IntrudEye monitoring features.</li>
+            <li>Revoke Device Administrator access.</li>
+            <li>Disable Accessibility Service access.</li>
+            <li>Uninstall the application at any time.</li>
+        </ul>
 
-<ul>
-<li>Contacts</li>
-<li>SMS messages</li>
-<li>Call logs</li>
-<li>Clipboard content</li>
-<li>Browsing history</li>
-<li>Advertising IDs</li>
-<li>Payment card information</li>
-<li>Social media account credentials</li>
-</ul>
+        <h2>Changes to This Privacy Policy</h2>
 
-<p>
-IntrudEye does not sell personal information to advertisers or data brokers.
-</p>
+        <p>
+            We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last Updated" date shown at the top of this page.
+        </p>
+          
+        <h2>Contact Us</h2>
 
-<h2>Data Security</h2>
+        <p>
+            If you have any questions, feedback, support requests, or privacy-related inquiries regarding Avraan IntrudEye, please contact us:
+        </p>
 
-<p>
-We take reasonable measures to protect information processed by the application. However, no method of electronic storage or transmission can guarantee absolute security.
-</p>
+        <p>
+            <strong>Email:</strong><br>
+            <a href="mailto:avraan.co@gmail.com">
+                avraan.co@gmail.com
+            </a>
+        </p>
 
-<h2>Children's Privacy</h2>
+        <p>
+            <strong>Website:</strong><br>
+            <a href="https://avraan-intrudeye.vercel.app/" target="_blank">
+                https://avraan-intrudeye.vercel.app/
+            </a>
+        </p>
 
-<p>
-IntrudEye is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13.
-</p>
+        <h2>Our Privacy Commitment</h2>
 
-<h2>Your Choices</h2>
+        <p>
+            IntrudEye was built with a privacy-first approach. We only collect and process information required to provide anti-theft protection, security alerts, and device recovery features. We do not sell personal information, display third-party advertisements, or monetize user data.
+        </p>
 
-<ul>
-<li>Disable permissions through Android Settings</li>
-<li>Disable IntrudEye protection features</li>
-<li>Revoke Device Administrator access</li>
-<li>Disable Accessibility Service access</li>
-<li>Uninstall the application at any time</li>
-</ul>
+        <hr style="margin-top:40px;">
 
-<h2>Changes to This Privacy Policy</h2>
+        <div class="footer">
+            <p>© 2026 Avraan IntrudEye. All Rights Reserved.</p>
+            <p style="margin-top: 5px;">
+                <a href="https://avraan-intrudeye.vercel.app/" target="_blank">
+                    Avraan IntrudEye
+                </a>
+            </p>
+        </div>
 
-<p>
-We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Last Updated" date shown at the top of this page.
-</p>
-  
-<h2>Contact Us</h2>
-
-<p>
-If you have any questions, feedback, support requests, or privacy-related inquiries regarding Avraan IntrudEye, please contact us through any of the following methods:
-</p>
-
-<p>
-<strong>Email:</strong><br>
-<a href="mailto:avraan.co@gmail.com">
-avraan.co@gmail.com
-</a>
-</p>
-
-<p>
-<strong>Website:</strong><br>
-<a href="https://avraan-intrudeye.vercel.app/" target="_blank">
-https://avraan-intrudeye.vercel.app/
-</a>
-</p>
-
-<h2>Our Privacy Commitment</h2>
-
-<p>
-IntrudEye was built with a privacy-first approach. We only collect and process information required to provide anti-theft protection, security alerts, and device recovery features. We do not sell personal information, display third-party advertisements, or monetize user data.
-</p>
-
-<hr style="margin-top:40px;">
-
-<div class="footer">
-<p>© 2026 Avraan IntrudEye. All Rights Reserved.</p>
-<p>
-<a href="https://avraan-intrudeye.vercel.app/" target="_blank">
-Avraan IntrudEye
-</a>
-</p>
-</div>
-
-</div>
+    </div>
 </div>
 
 </body>
